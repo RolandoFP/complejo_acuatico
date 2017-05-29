@@ -29,18 +29,9 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.php">Farmacias Morelia</a>
-            </div>
+            
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+          
                     <li>
                         <a href="inicio.php">Inicio</a>
                     </li>
@@ -51,25 +42,16 @@
     <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Login
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.php">Home</a>
-                    </li>
-                    <li class="active">Login</li>
-                </ol>
-            </div>
-        </div>
+      
+        
         <!-- /.row -->
 
         <!-- Content Row -->
         <div class="row">
             <div class="col-lg-12">
                <form id="alta" action="validar.php" method="post">
-             Id de empleado:<input type="text" name="Id_empleado" required placeholder="Id_Empleado"/><br>
-             Contraseña:<input type="password" name="pass" required placeholder="Contraseña"/><br>
+             Id de empleado:<input type="text" name="Id_Empleado" required placeholder="Id_Empleado"/><br>
+             Contraseña:<input type="password" name="Contraseña" required placeholder="Contraseña"/><br>
              <input type="submit" value="Enviar" name="login">
          </form>
             </div>

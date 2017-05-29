@@ -3,18 +3,18 @@ session_start();
 include "conexion.php";
 
  extract($_POST);
-    $query="SELECT Tipo FROM usuario WHERE Email='$email' and Password='$pass'";
+    $query="SELECT puesto FROM empleado WHERE id_empleado='$Id_Empleado' and Password='$Contraseña'";
     $registro=mysqli_query($conexion,$query);
           if($reg=mysqli_fetch_array($registro)){
               //echo "entró";
               switch($reg['Tipo']){
                   case 1:
-                      $_SESSION['userid']=$res->idusuario;
-                      header("location:admin.php");
+                      $_SESSION['userid']=$res->id_empleado;
+                      header("location:ingresar.html");
                       break;
                   case 2:
-                      $_SESSION['userid']=$res->idusuario;
-                      $c1="INSERT INTO activo (email) values('$email')";
+                      $_SESSION['userid']=$res->id_empleado;
+                      $c1="INSERT INTO empleado (id_empleado) values('$id_empleado')";
                       $r1=$conexion->query($c1); 
                       //echo "Hola";
                       header("location:user.php");
@@ -22,7 +22,7 @@ include "conexion.php";
               }
           }else{
               $error = "El nombre de usuario  y/o la contraseña no coinciden";
-              header("location:Login.php?error=$error");
+              header("location:ingresar.php?error=$error");
               
           }
 //"INSERT INTO carrito (Medicina,Precio,Precio_T,Cantidad) values ('$nombre','$precio','$precio','1')";

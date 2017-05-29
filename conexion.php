@@ -1,3 +1,3 @@
 <?php
-$conexion=mysqli_connect("localhost","root","","complejovs") or die ("No se pudo establecer conexion");
+$conexion=mysqli_connect("localhost","root","","acuaticovf") or die ("No se pudo establecer conexion");
 ?>
