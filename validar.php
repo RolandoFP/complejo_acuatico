@@ -3,7 +3,7 @@ session_start();
 include "conexion.php";
 
  extract($_POST);
-    $query="SELECT puesto FROM empleado WHERE id_empleado='$Id_Empleado' and Password='$Contraseña'";
+    $query="SELECT puesto FROM empleado WHERE ID_Empleado='$id_empleado' and contraseña='$contraseña'";
     $registro=mysqli_query($conexion,$query);
           if($reg=mysqli_fetch_array($registro)){
               //echo "entró";

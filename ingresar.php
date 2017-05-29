@@ -50,8 +50,8 @@
         <div class="row">
             <div class="col-lg-12">
                <form id="alta" action="validar.php" method="post">
-             Id de empleado:<input type="text" name="Id_Empleado" required placeholder="Id_Empleado"/><br>
-             Contraseña:<input type="password" name="Contraseña" required placeholder="Contraseña"/><br>
+             Id de empleado:<input type="text" name="id_empleado" required placeholder="id_empleado"/><br>
+             Contraseña:<input type="password" name="contraseña" required placeholder="contraseña"/><br>
              <input type="submit" value="Enviar" name="login">
          </form>
             </div>
