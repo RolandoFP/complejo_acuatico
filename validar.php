@@ -8,15 +8,15 @@ include "conexion.php";
           if($reg=mysqli_fetch_array($registro)){
               //echo "entró";
               switch($reg['puesto']){
-                  case "administrador":
+                  case "Administrador":
                       $_SESSION['id_empleado']=$res->id_empleado;
                       header("location:administrador.php");
                       break;
-                  case "administrativo":
+                  case "Administrativo":
                       $_SESSION['id_empleado']=$res->id_empleado;
                       header("location:administrativo.php");
                       break;
-                  case "medico":
+                  case "Medico":
                   $_SESSION['id_empleado']=$res->id_empleado;
                       header("location:medico.php");
                       break;
