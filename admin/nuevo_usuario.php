@@ -69,6 +69,7 @@
                     <option value="Administrador">Administrador</option>
                     <option value="Administrativo">Administrativo</option>
                     <option value="Medico">Médico</option>
+                    <option value="Instructor">Instructor</option>
                     
                   </select>
                   <label>Puesto</label>

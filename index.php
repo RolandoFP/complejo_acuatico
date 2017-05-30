@@ -127,6 +127,8 @@ session_destroy();
                     <?php
                     error_reporting(E_ALL ^ E_NOTICE);
                     if($_GET["error"]=="si"){echo "<span style='COLOR: RED;'>Ocurrió un problema al iniciar sesión, intente de nuevo más tarde...</span>";}
+                    if($_GET["error"]=="instructor"){echo "<span style='COLOR: RED;'>El usuario no tiene permisos para ingresar, intente de nuevo</span>";}
+       
                     ?>
                 </div>
             </div>
